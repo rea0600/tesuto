@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tesuto</title>
+    <style>
+        .contents{
+            display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr ;
+        background-color: rgb(255, 246, 167);
+        width: 800px;
+        height: 500px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .box{
+        background-color: rgb(17, 0, 255);
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        }
+        .text{
+        color: white;
+        background-color: rgb(0, 0, 0);
+        width: 800px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    form{
+        text-align: center;
+    }
+    .img-box{
+        text-align: center;
+    }
+    @media(max-width:767px){
+        .contents{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="contents">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="text"><br>
+       文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+       文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+       文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー</div>
+    
+       <div class="img-box"><img src="img/kapi.webp" alt="kapibara"></div>
+       
+        <form action="#" method="get"><p>名前</p>
+            <input type="text" name="name">
+            <p>返信を希望する人はチェックしてください<br>
+                メッセージ</p>
+            <input type="text" name="mese"><br>
+            <input type="submit" value="送信する">
+        </form>
+</body>
+</html>
